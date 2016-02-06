@@ -1,0 +1,36 @@
+<html>
+<header>
+<title> greetings
+</title>
+
+</header>
+<body>
+
+
+  <div id="greetings">
+  </div>
+<p> It is fun to have you around <span id="hometown"> it is nice </span> </p>
+
+
+
+
+
+
+
+<script>
+
+var visitors_name = window.prompt("Hi, please enter your username")
+var town = window.prompt(" Enter your town")
+var welcome_message = "Welcome" + " " + visitors_name;
+
+var x = document.querySelector("#greetings");
+x.textContent = welcome_message;
+var y = document.querySelector("#hometown");
+y.textContent = town;
+
+
+</script>
+
+
+</body>
+</html>
