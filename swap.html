@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <div id="greeting"></div>
+ It is nice having a visitor from <span id="hometown"></span> Town
+ <div id="source">Yeah destination swerve!!</div>
+ <div id="destination">Destination</div>
+ <div id="swap_1"> I come first</div>
+ <div id="swap_2">I come second</div>
+ <script>
+// promt and message
+var visitor_name=prompt("What is your name?");
+welcome_message="Welcome to my site" + " " + visitor_name + " " + "Hope you enjoy your stay";
+document.querySelector('#greeting').textContent = welcome_message;
+var town=prompt("What is yourhome town?");
+document.querySelector('#hometown').textContent = town;
+// Replace
+var source = document.querySelector('#source').textContent;
+document.querySelector('#destination').textContent = source;
+// Swap
+var swap_1 = document.querySelector('#swap_1').textContent;
+var swap_2 = document.querySelector('#swap_2').textContent;
+document.querySelector('#swap_1').textContent = swap_2;
+document.querySelector('#swap_2').textContent = swap_1;
+ </script>
+</body>
+</html>
