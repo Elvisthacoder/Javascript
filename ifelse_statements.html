@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If_Else statements</title>
+</head>
+<body>
+<script type="text/javascript">
+var response, image_path,
+  secret_saying = document.querySelector('#message').textContent
+
+if (secret_saying === "An Eagle Flies at Midnight") {
+response = "You may pass"
+image_path = "images/Timber.jpg"
+} else {
+response = "Release the hounds!"
+image_path = "images/Timber.jpg"
+}
+
+document.querySelector('#result').textContent = response
+document.querySelector('img').src = image_path
+</script>
+</body>
+</html>
